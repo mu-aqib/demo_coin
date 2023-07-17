@@ -196,6 +196,7 @@ export default {
 
   methods: {
     async onChange(event) {
+      console.log(event);
       const store = useMyStore();
       const result = await store.getOrderHistory(this.type);
       if (result) alert("data fetched");

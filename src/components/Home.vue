@@ -207,7 +207,7 @@ export default {
       if (data.price && data.amount) {
         // call action from store
         const store = useMyStore();
-        const result = await store.sendBuySellCost(data);
+        await store.sendBuySellCost(data);
       } else alert("Insert amount and price");
     },
   },
